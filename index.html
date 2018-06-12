@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="info">
+    <div class="turnX myX">X</div>
+    <select name="type" id="type">
+      <option value="ai">Play with AI</option>
+      <option value="X">Play as X</option>
+      <option value="O">Play as O</option>
+    </select>
+    <div class="turnO">O</div>
+  </div>
+  <div class="score">
+    <div class="scoreLeft">score: 0</div>
+    <div class="scoreRight">score: 0</div>
+  </div>
+  <div class="game">
+    <div class="row">
+      <div class="box" data-ceil="0"></div>
+      <div class="box" data-ceil="1"></div>
+      <div class="box" data-ceil="2"></div>
+    </div>
+    <div class="row">
+      <div class="box" data-ceil="3"></div>
+      <div class="box" data-ceil="4"></div>
+      <div class="box" data-ceil="5"></div>
+    </div>
+    <div class="row">
+      <div class="box" data-ceil="6"></div>
+      <div class="box" data-ceil="7"></div>
+      <div class="box" data-ceil="8"></div>
+    </div>
+  </div>
+  <div class="reset">
+    <button id="res">Reset</button>
+  </div>
+  <script src="script/main.js"></script>
+</body>
+
+</html>

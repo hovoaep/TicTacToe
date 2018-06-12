@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #ffffff;
+  padding: 15px 50px;
+}
+
+.game {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  font-size: 60px;
+  font-weight: 600;
+  padding: 40px;
+  opacity: 1;
+  background-color: #efefef;
+  color: #ffffff;
+  margin: 8px;
+  border-radius: 5%;
+}
+
+.info {
+  text-align: center;
+}
+
+#type {
+  border: 0;
+  padding: 22px 20px;
+  font-size: 20px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+/* .box:hover {
+  background-color: #dfdfdf;
+} */
+
+.trans {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 3s;
+  animation-name: fadeInOpacity;
+  /* animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.3s; */
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.myCircle {
+  transform: rotateX(0);
+  animation-iteration-count: 1;
+  animation-name: myCircle;
+  animation-timing-function: ease-out;
+  animation-duration: 3s;
+}
+
+.turnX {
+  float: left;
+  /* display: inline-block; */
+}
+
+.turnO {
+  /* text-align: right; */
+  float: right;
+  /* display: inline-block; */
+}
+
+.turnX,
+.turnO {
+  padding: 5px 200px;
+  font-size: 50px;
+  font-weight: 900;
+  border: 2px solid #efefef;
+  color: #afafaf;
+}
+
+@keyframes myCircle {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(360);
+  }
+}
+
+.myX {
+  background-color: #3688c3;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.myO {
+  background-color: #ffa000;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+#res {
+  border: 0;
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.reset {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.score {
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.scoreLeft {
+  float: left;
+}
+
+.scoreRight {
+  float: right;
+}
